@@ -1,0 +1,7 @@
+<p>
+  Pai works!
+</p>
+<ul *ngFor="let f of familia">
+  <li>{{f.nome}}  {{f.sobrenome}}</li>
+</ul>
+<app-Filho [recebeFamilia]="familia" (respostaFamilia)="receberFeedback($event)"></app-Filho>

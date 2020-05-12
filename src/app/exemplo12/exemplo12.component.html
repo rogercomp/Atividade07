@@ -1,3 +1,11 @@
-<p>
-  exemplo12 works!
-</p>
+<div class="container">
+  <h1 class="text-center">{{title}}</h1>
+  Exemplo 12 - Você pode entrar com um nome ou <br /> 
+  A cada 10 segundos um novo nome é gerado
+</div>
+
+<input placeholder="digite um nome" #campo>
+<button (click)="enviar(campo.value)">Enviar</button>
+<ul *ngFor="let r of nomes">
+  <li>{{r}}</li>
+</ul>
